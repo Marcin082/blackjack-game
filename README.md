@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# <BlackJack-Game>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
+![](src/assets/logo.png)
+BlackJAck is a casino card game. The most widely played casino banking game in the world. It uses decks of 52 cards and descends from a global family of casino banking games known as Twenty-One. The game is a comparing card game where each player competes against the dealer.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+ Here is a working live demo : DDDDD
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![](src/assets/screen1.png)
+![](src/assets/screen3.png)
+![](src/assets/screen4.png)
+## Game Rules
+* The goal of blackjack is to beat the dealer's hand without going over 21.
+* Face cards are worth 10. Aces are worth 1 or 11, whichever makes a better hand.
+* Each player starts with two cards, one of the dealer's cards is hidden until the end.
+* To 'Hit' is to ask for another card. To 'Stand' is to hold your total and end your turn.
+* If you are dealt 21 from the start (Ace & 10), you got a blackjack.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Built with
 
-### `npm test`
+* TypeScrpit
+* Scss modules
+* React
+* React Redux
+* [https://deckofcardsapi.com/](CardsApi)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+### Install Node JS
+Refer to [https://nodejs.org/en/](https://nodejs.org/en/) to install nodejs
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install create-react-app
+Install create-react-app npm package globally. This will help to easily run the project and also build the source files easily. Use the following command to install create-react-app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install -g create-react-app
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Cloning and Running the Application in local
 
-### `npm run eject`
+Clone the project into local
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Install all the npm packages. Go into the project folder and type the following command to install all npm packages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+In order to run the application Type the following command
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+The Application Runs on **localhost:3000**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
