@@ -1,0 +1,140 @@
+@keyframes chip1 {
+    from {
+        top:300px;
+        left:-300px;
+    }
+    to {
+        top:-20px;
+        left:80px;
+    }
+}
+@keyframes chip5 {
+    from {
+        top:340px;
+        left:-180px;
+    }
+    to {
+        top:-20px;
+        left:70px;
+    }
+}
+@keyframes chip10 {
+    from {
+        top:350px;
+        left:-50px;
+    }
+    to {
+        top:-20px;
+        left:80px;
+    }
+}
+@keyframes chip25 {
+    from {
+        top:350px;
+        left:50px;
+    }
+    to {
+        top:-20px;
+        left:70px;
+    }
+}
+@keyframes chip50 {
+    from {
+        top:350px;
+        left:170px;
+    }
+    to {
+        top:-20px;
+        left:80px;
+    }
+}
+@keyframes chip100 {
+    from {
+        top:340px;
+        left:300px;
+    }
+    to {
+        top:-20px;
+        left:70px;
+    }
+}
+@keyframes chip500 {
+    from {
+        top:300px;
+        left:400px;
+    }
+    to {
+        top:-20px;
+        left:80px;
+    }
+}
+.betContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(15px,5px);
+    cursor: pointer;
+    &__bet{
+        color:white;
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        width:100px;
+        padding-right: 100px;
+    }
+    &__token{
+        width:85px;
+        padding: 0 10px;
+        position: absolute;
+        top:-250px;
+        left:500px;
+        
+    }
+    &__showToken{
+        width:85px;
+        padding: 0 10px;
+        position:absolute;
+    }
+    &__showToken1{
+        width:85px;
+        padding: 0 10px;
+        position:absolute;
+        animation: chip1 0.6s linear 0s 1 normal forwards ;
+    }
+    &__showToken5{
+        width:85px;
+        padding: 0 10px;
+        position:absolute;
+        animation: chip5 0.6s linear 0s 1 normal forwards ;
+    }
+    &__showToken10{
+        width:85px;
+        padding: 0 10px;
+        position:absolute;
+        animation: chip10 0.6s linear 0s 1 normal forwards ;
+    }
+    &__showToken25{
+        width:85px;
+        padding: 0 10px;
+        position:absolute;
+        animation: chip25 0.6s linear 0s 1 normal forwards ;
+    }
+    &__showToken50{
+        width:85px;
+        padding: 0 10px;
+        position:absolute;
+        animation: chip50 0.6s linear 0s 1 normal forwards ;
+    }
+    &__showToken100{
+        width:85px;
+        padding: 0 10px;
+        position:absolute;
+        animation: chip100 0.6s linear 0s 1 normal forwards ;
+    }
+    &__showToken500{
+        width:85px;
+        padding: 0 10px;
+        position:absolute;
+        animation: chip500 0.6s linear 0s 1 normal forwards ;
+    }
+
+}

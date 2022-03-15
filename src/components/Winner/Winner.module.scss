@@ -1,0 +1,12 @@
+.winnerContainer{
+    position:absolute;
+    transform: translate(400px,-510px);
+    z-index: 3;
+    &__text{
+        font-size: 60px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        
+        
+    }
+}

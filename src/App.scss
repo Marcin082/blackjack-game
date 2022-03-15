@@ -1,0 +1,117 @@
+body{
+  background-color: rgb(24, 26, 24);
+}
+.App {
+  text-align: center;
+  margin:100px auto;
+  background-image:url(assets/cardbg.jpg) ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width:1000px;
+  height:800px;
+  overflow: hidden;
+}
+.cash{
+  position:absolute;
+  float: left;
+  padding: 10px;
+  color:white;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+  gap:5px;
+  font-family: 'Arimo', sans-serif;
+  background-color: #1e84495b;
+}
+.RoundBet{
+  position:absolute;
+  transform: translate(280px,-480px);
+}
+.Logo{
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:1000px;
+  height:800px;
+  text-shadow:0px 2px 5px rgba(0, 113, 61, 0.88);
+  gap:10px;
+}
+.Logocard{
+  width:70px;
+}
+.LogoHeading{
+  font-size: 50px;
+  color:#B4B4B4;
+  font-family: 'Libre Baskerville', serif;
+}
+.Bet{
+  position:absolute;
+  transform: translate(380px,-730px);
+}
+.showtokens{
+  display:flex;
+  width:100%;
+  transform:translateY(-240px);
+  transition: all 0.5s ease;
+}
+.closetokens{
+  display:flex;
+  width:100%;
+  bottom:0;
+  transition: all 0.5s ease;
+}
+.startButton{
+  transform: translatey(120px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__btn{
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 35px 46px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  
+  &:hover {
+    background-color: #1e8449;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+    }
+
+  &:active {
+    transform: translateY(2px);
+    transition-duration: .35s;
+    }
+
+  &:hover {
+    box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+    } 
+  }
+}
+
