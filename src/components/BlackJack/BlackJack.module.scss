@@ -1,8 +1,17 @@
-.blackJack{
-    text-shadow:0 0 5px #146b11, 0 0 10px #146b11, 0 0 15px #146b11, 0 0 20px #26b621, 0 0 30px #26b621, 0 0 40px #26b621, 0 0 55px #26b621, 0 0 75px #26b621;
-    color:rgb(255, 255, 255);
-    font-size: 60px;
-    font-weight: 800;
-    font-family: 'Roboto', sans-serif;
-    position:absolute;
+.blackJack {
+  text-shadow: 0 0 5px #146b11, 0 0 10px #146b11, 0 0 15px #146b11,
+    0 0 20px #26b621, 0 0 30px #26b621, 0 0 40px #26b621, 0 0 55px #26b621,
+    0 0 75px #26b621;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media all and (max-width: 1000px) {
+  .blackJack {
+    font-size: 45px;
+  }
 }

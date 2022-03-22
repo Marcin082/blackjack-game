@@ -138,3 +138,31 @@
     }
 
 }
+@media all and (max-width: 1000px) {
+    .betContainer{
+        position:absolute;
+        margin:0 auto;
+        &__showToken1{
+            width:65px;
+        }
+        &__showToken5{
+            width:65px;
+        }
+        &__showToken10{
+            width:65px;
+        }
+        &__showToken25{
+            width:65px;
+        }
+        &__showToken50{
+            width:65px;
+        }
+        &__showToken100{
+            width:65px;
+        }
+        &__showToken500{
+            width:65px;
+        }
+    }
+    
+}

@@ -7,10 +7,11 @@ import { RootState } from "../../redux/reducers";
 const TokensState: React.FC = () => {
   const dispatch = useDispatch();
   const game = useSelector((state: RootState) => state.game);
+  const { cash } = game;
   return (
     <div className={styles.tokensContainer}>
       <div className={styles.tokensContainer__tokens}>
-        {game.cash >= 1 ? (
+        {cash >= 1 ? (
           <img
             onClick={() => {
               dispatch(setBet(1));
@@ -28,7 +29,7 @@ const TokensState: React.FC = () => {
             }}
           ></div>
         )}
-        {game.cash >= 5 ? (
+        {cash >= 5 ? (
           <img
             onClick={() => {
               dispatch(setBet(5));
@@ -46,7 +47,7 @@ const TokensState: React.FC = () => {
             }}
           ></div>
         )}
-        {game.cash >= 10 ? (
+        {cash >= 10 ? (
           <img
             onClick={() => {
               dispatch(setBet(10));
@@ -65,7 +66,7 @@ const TokensState: React.FC = () => {
           ></div>
         )}
 
-        {game.cash >= 25 ? (
+        {cash >= 25 ? (
           <img
             onClick={() => {
               dispatch(setBet(25));
@@ -83,7 +84,7 @@ const TokensState: React.FC = () => {
             }}
           ></div>
         )}
-        {game.cash >= 50 ? (
+        {cash >= 50 ? (
           <img
             onClick={() => {
               dispatch(setBet(50));
@@ -101,7 +102,7 @@ const TokensState: React.FC = () => {
             }}
           ></div>
         )}
-        {game.cash >= 100 ? (
+        {cash >= 100 ? (
           <img
             onClick={() => {
               dispatch(setBet(100));
@@ -119,7 +120,7 @@ const TokensState: React.FC = () => {
             }}
           ></div>
         )}
-        {game.cash >= 500 ? (
+        {cash >= 500 ? (
           <img
             onClick={() => {
               dispatch(setBet(500));

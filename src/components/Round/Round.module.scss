@@ -1,24 +1,44 @@
-.roundContainer{
-    display:flex;
+.roundContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 40px;
+  position: relative;
+  &__row {
+    display: flex;
+    flex-direction: column;
+    gap: 400px;
+    transform: translate(30px, -140px);
+  }
+  &__points {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100%;
-    gap:40px;
-    position:relative;
-    &__row{
-        display:flex;
-        flex-direction: column;
-        gap:400px;
-        transform: translate(30px,-140px);
+    gap: 120px;
+    position: absolute;
+    transform: translate(-80px, -60px);
+  }
+}
+@media all and (max-width: 1000px) {
+  .roundContainer {
+    gap: 40px;
+    &__row {
+      gap: 400px;
+      transform: translate(30px, -130px);
     }
-    &__points{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        gap:120px;
-        position: absolute;
-        transform: translate(-80px,-60px);
+    &__points {
+      transform: translate(-80px, -60px);
     }
-    
+  }
+}
+@media all and (max-width: 450px) {
+  .roundContainer {
+    gap: 90px;
+    &__row {
+      gap: 380px;
+      transform: translate(30px, -90px);
+    }
+  }
 }

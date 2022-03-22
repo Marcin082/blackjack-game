@@ -1,12 +1,23 @@
-.winnerContainer{
-    position:absolute;
-    transform: translate(400px,-510px);
-    z-index: 3;
-    &__text{
-        font-size: 60px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 800;
-        
-        
+.winnerContainer {
+  position: absolute;
+  transform: translate(400px, -510px);
+  z-index: 3;
+  background: transparent;
+  &__text {
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+  }
+}
+@media all and (max-width: 1000px) {
+  .winnerContainer {
+    transform: translate(0px, -500px);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    &__text {
+      font-size: 45px;
     }
+  }
 }

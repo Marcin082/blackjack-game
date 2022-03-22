@@ -1,76 +1,84 @@
-.cardContainer{
-    transform:translatex(-70px);
-    
-    
+.cardContainer {
+  transform: translatex(-70px);
 }
 @keyframes card1 {
-    from {
-        transform: translate(420px,-400px);
-    }
-    to {
-        transform: rotate(-6deg) translate(-128px,-15px);
-    }
+  from {
+    transform: translate(820px, -400px);
+  }
+  to {
+    transform: rotate(-6deg) translate(-128px, -15px);
+  }
 }
 @keyframes card2 {
-    from {
-        transform: translate(420px,-400px);
-    }
-    to {
-        transform: rotate(-1.5deg) translate(-105px,-9px);
-    }
+  from {
+    transform: translate(820px, -400px);
+  }
+  to {
+    transform: rotate(-1.5deg) translate(-105px, -9px);
+  }
 }
 @keyframes card3 {
-    from {
-        transform: translate(420px,-400px);
-    }
-    to {
-        transform: rotate(3deg) translate(-74px,-1px);
-    }
+  from {
+    transform: translate(820px, -400px);
+  }
+  to {
+    transform: rotate(3deg) translate(-74px, -1px);
+  }
 }
 @keyframes card4 {
-    from {
-        transform: translate(420px,-400px);
-    }
-    to {
-        transform: rotate(8deg) translate(-44px,5px);
-    }
+  from {
+    transform: translate(820px, -400px);
+  }
+  to {
+    transform: rotate(8deg) translate(-44px, 5px);
+  }
 }
 @keyframes card5 {
-    from {
-        transform: translate(120px,400px);
-    }
-    to {
-        transform: rotate(12deg) translate(-14px,10px);
-    }
+  from {
+    transform: translate(820px, -400px);
+  }
+  to {
+    transform: rotate(12deg) translate(-14px, 10px);
+  }
 }
-.cardImg{
-    width:160px;
+.cardImg {
+  width: 160px;
+  position: absolute;
+  &:first-child {
     position: absolute;
-    &:first-child{
-        position:absolute;
-        animation: card1 0.7s linear 0s 1 normal forwards ;
-    }
-    &:nth-child(2){
-        animation: card2 0.7s linear 0s 1 normal forwards ;
-        position: absolute;
-    }
-    &:nth-child(3){
-        animation: card3 0.7s linear 0s 1 normal forwards ;
-        position: absolute;
-    }
-    &:nth-child(4){
-        animation: card4 0.7s linear 0s 1 normal forwards ;
-        position: absolute;
-    }
-    &:nth-child(5){
-        animation: card5 0.7s linear 0s 1 normal forwards ;
-        position: absolute;
-    }
-    &__back{
-        width:160px;
-        z-index: 3;
-        animation: card2 0.7s linear 0s 1 normal forwards ;
-        position: absolute;
-    }
+    animation: card1 0.7s linear 0s 1 normal forwards;
+  }
+  &:nth-child(2) {
+    animation: card2 0.7s linear 0s 1 normal forwards;
+    position: absolute;
+  }
+  &:nth-child(3) {
+    animation: card3 0.7s linear 0s 1 normal forwards;
+    position: absolute;
+  }
+  &:nth-child(4) {
+    animation: card4 0.7s linear 0s 1 normal forwards;
+    position: absolute;
+  }
+  &:nth-child(5) {
+    animation: card5 0.7s linear 0s 1 normal forwards;
+    position: absolute;
+  }
+  &__back {
+    width: 160px;
+    z-index: 3;
+    animation: card2 0.7s linear 0s 1 normal forwards;
+    position: absolute;
+  }
 }
-
+@media all and (max-width: 1000px) {
+  .cardContainer {
+    transform: translatex(-20px);
+  }
+  .cardImg {
+    width: 130px;
+    &__back {
+      width: 130px;
+    }
+  }
+}

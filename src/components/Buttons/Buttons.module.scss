@@ -1,212 +1,248 @@
-.buttonsContainer{
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  &__buttonRow {
     display: flex;
-    justify-content: center;
-    &__buttonRow{
-    display:flex;
-    gap:130px;
+    gap: 130px;
     align-items: center;
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    bottom: 0;
     transform: translatey(-10px);
-    }
+  }
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    font-size: 18px;
+    color: rgb(230, 230, 230);
+    font-family: "Roboto", sans-serif;
+  }
+  &__hit {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #27ae60;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, 0.15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+      sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 17px 38px 13px 38px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
 
-    &__actions{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &__buttonContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap:7px;
-        font-size:18px;
-        color:rgb(230, 230, 230);
-        font-family: 'Roboto',sans-serif;
-    }
-    &__hit{
-        appearance: none;
-        backface-visibility: hidden;
-        background-color: #27ae60;
-        border-radius: 8px;
-        border-style: none;
-        box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-block;
-        font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
-        font-size: 25px;
-        font-weight: 600;
-        letter-spacing: normal;
-        line-height: 1.5;
-        outline: none;
-        overflow: hidden;
-        padding: 17px 38px 13px 38px;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        transform: translate3d(0, 0, 0);
-        transition: all .3s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        vertical-align: top;
-        white-space: nowrap;
-        
-        &:hover {
-            background-color: #1e8449;
-            opacity: 1;
-            transform: translateY(0);
-            transition-duration: .35s;
-            }
-
-        &:active {
-            transform: translateY(2px);
-            transition-duration: .35s;
-            }
-
-        &:hover {
-            box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
-            } 
-        }
-        
-    &__stand{
-        appearance: none;
-        backface-visibility: hidden;
-        background-color: #ae2727;
-        border-radius: 8px;
-        border-style: none;
-        box-shadow: rgba(128, 22, 22, 0.2) 0 4px 9px;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-block;
-        font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
-        font-size: 25px;
-        font-weight: 600;
-        letter-spacing: normal;
-        line-height: 1.5;
-        outline: none;
-        overflow: hidden;
-        padding: 17px 38px 13px 38px;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        transform: translate3d(0, 0, 0);
-        transition: all .3s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        vertical-align: top;
-        white-space: nowrap;
-    
     &:hover {
-        background-color: rgba(128, 22, 22);
-        opacity: 1;
-        transform: translateY(0);
-        transition-duration: .35s;
-        }
+      background-color: #1e8449;
+      opacity: 1;
+      transform: translateY(0);
+      transition-duration: 0.35s;
+    }
 
     &:active {
-        transform: translateY(2px);
-        transition-duration: .35s;
-        }
+      transform: translateY(2px);
+      transition-duration: 0.35s;
+    }
 
     &:hover {
-        box-shadow: rgba(128, 22, 22, 0.2) 0 6px 12px;
-        } 
+      box-shadow: rgba(39, 174, 96, 0.2) 0 6px 12px;
     }
-    &__double{
-        appearance: none;
-        backface-visibility: hidden;
-        background-color: #2d59b9;
-        border-radius: 8px;
-        border-style: none;
-        box-shadow: rgba(22, 47, 128, 0.2) 0 4px 9px;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-block;
-        font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
-        font-size: 25px;
-        font-weight: 600;
-        letter-spacing: normal;
-        line-height: 1.5;
-        outline: none;
-        overflow: hidden;
-        padding: 12px 30px 8px 30px;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        transform: translate3d(0, 0, 0);
-        transition: all .3s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        vertical-align: top;
-        white-space: nowrap;
-        
-        &:hover {
-            background-color: rgb(26, 47, 161);
-            opacity: 1;
-            transform: translateY(0);
-            transition-duration: .35s;
-            }
+  }
 
-        &:active {
-            transform: translateY(2px);
-            transition-duration: .35s;
-            }
+  &__stand {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #ae2727;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(128, 22, 22, 0.2) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+      sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 17px 38px 13px 38px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
 
-        &:hover {
-            box-shadow: rgba(22, 47, 128, 0.2) 0 6px 12px;
-            } 
+    &:hover {
+      background-color: rgba(128, 22, 22);
+      opacity: 1;
+      transform: translateY(0);
+      transition-duration: 0.35s;
     }
-    &__insurance{
-        appearance: none;
-        backface-visibility: hidden;
-        background-color: #c4c124;
-        border-radius: 8px;
-        border-style: none;
-        box-shadow: rgba(189, 192, 2, 0.2) 0 4px 9px;
-        box-sizing: border-box;
-        color: #fff;
-        cursor: pointer;
-        display: inline-block;
-        font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
-        font-size: 25px;
-        font-weight: 600;
-        letter-spacing: normal;
-        line-height: 1.5;
-        outline: none;
-        overflow: hidden;
-        padding: 15px 30px 5px 30px;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        transform: translate3d(0, 0, 0);
-        transition: all .3s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        vertical-align: top;
-        white-space: nowrap;
-        
-        &:hover {
-            background-color: rgb(138, 136, 11);
-            opacity: 1;
-            transform: translateY(0);
-            transition-duration: .35s;
-            }
 
-        &:active {
-            transform: translateY(2px);
-            transition-duration: .35s;
-            }
-
-        &:hover {
-            box-shadow: rgba(189, 192, 2, 0.2) 0 6px 12px;
-            } 
+    &:active {
+      transform: translateY(2px);
+      transition-duration: 0.35s;
     }
+
+    &:hover {
+      box-shadow: rgba(128, 22, 22, 0.2) 0 6px 12px;
+    }
+  }
+  &__double {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #2d59b9;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(22, 47, 128, 0.2) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+      sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 12px 30px 8px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: rgb(26, 47, 161);
+      opacity: 1;
+      transform: translateY(0);
+      transition-duration: 0.35s;
+    }
+
+    &:active {
+      transform: translateY(2px);
+      transition-duration: 0.35s;
+    }
+
+    &:hover {
+      box-shadow: rgba(22, 47, 128, 0.2) 0 6px 12px;
+    }
+  }
+  &__insurance {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #c4c124;
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(189, 192, 2, 0.2) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+      sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 15px 30px 5px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: rgb(138, 136, 11);
+      opacity: 1;
+      transform: translateY(0);
+      transition-duration: 0.35s;
+    }
+
+    &:active {
+      transform: translateY(2px);
+      transition-duration: 0.35s;
+    }
+
+    &:hover {
+      box-shadow: rgba(189, 192, 2, 0.2) 0 6px 12px;
+    }
+  }
+}
+@media all and (max-width: 1000px) {
+  .buttonsContainer {
+    transform: translatey(155px);
+    &__buttonRow {
+      justify-content: center;
+      gap: 30%;
+    }
+    &__hit {
+      font-size: 19px;
+      padding: 18px 30px 10px 30px;
+    }
+    &__stand {
+      font-size: 19px;
+      padding: 18px 30px 10px 30px;
+    }
+    &__double {
+      font-size: 15px;
+      padding: 10px 25px 1px 25px;
+    }
+    &__insurance {
+      font-size: 11px;
+      padding: 10px 25px 1px 25px;
+    }
+  }
+}
+@media all and (max-width: 450px) {
+  .buttonsContainer {
+    &__buttonRow {
+      justify-content: center;
+      gap: 5%;
+    }
+  }
 }

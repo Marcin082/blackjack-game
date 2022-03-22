@@ -9,18 +9,19 @@ type Props = {
 };
 const Counter: React.FC<Props> = (props: Props) => {
   const cards = useSelector((state: RootState) => state.cards);
+  const { dealer } = cards;
   let dealerCards: string = "";
-  if (cards.dealer.cards[0] !== undefined) {
-    if (/[a-zA-Z]/.test(cards.dealer.cards[0].value)) {
+  if (dealer.cards[0] !== undefined) {
+    if (/[a-zA-Z]/.test(dealer.cards[0].value)) {
       dealerCards = "10";
     } else {
-      dealerCards = cards.dealer.cards[0].value;
+      dealerCards = dealer.cards[0].value;
     }
   }
 
   return (
     <div className={styles.counter}>
-      {cards.dealer.cards === props.who.cards && props.showCard === false
+      {dealer.cards === props.who.cards && props.showCard === false
         ? dealerCards
         : props.who.points}
     </div>

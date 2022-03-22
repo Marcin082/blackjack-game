@@ -2,7 +2,7 @@
 
 ## About
 ![](src/assets/logo.png)
-BlackJAck is a casino card game. The most widely played casino banking game in the world. It uses decks of 52 cards and descends from a global family of casino banking games known as Twenty-One. The game is a comparing card game where each player competes against the dealer.
+BlackJack is a casino card game. The most widely played casino banking game in the world. It uses decks of 52 cards and descends from a global family of casino banking games known as Twenty-One. The game is a comparing card game where each player competes against the dealer.
 
 ## Demo
 
@@ -25,7 +25,7 @@ BlackJAck is a casino card game. The most widely played casino banking game in t
 * Scss modules
 * React
 * React Redux
-* [https://deckofcardsapi.com/](CardsApi)
+* [CardsApi](https://deckofcardsapi.com/)
 
 ## Installation
 

@@ -34,8 +34,10 @@ export const gameReducer = (
       };
     case ActionGameTypes.SET_CASH:
       return { ...state, cash: state.cash + action.payload };
-      case ActionGameTypes.SET_INSURANCE:
-      return { ...state, cash: state.cash - state.bet};
+    case ActionGameTypes.SET_INSURANCE:
+      return { ...state, cash: state.cash - state.bet/2};
+    case ActionGameTypes.ADD_INSURANCE:
+      return { ...state, cash: state.cash + state.bet};
     case ActionGameTypes.DOUBLE_BET:
       return { ...state, cash: state.cash - state.bet, bet: state.bet * 2 };
     case ActionGameTypes.SET_RESULT:

@@ -9,16 +9,16 @@ import { BiRightArrow } from "react-icons/bi";
 
 type Props = {
   deckId: string;
-  setShowTokens:any;
+  setShowTokens:React.Dispatch<React.SetStateAction<boolean>>;
   showTokens:boolean;
 };
 const Betting: React.FC<Props> = (props: Props) => {
   const dispatch = useDispatch();
   const game = useSelector((state: RootState) => state.game);
-
+  const { bet} = game;
   return (
     <div className={styles.betContainer}>
-      {game.bet > 0 ? (
+      {bet > 0 ? (
         <div className={styles.betContainer__firstRow}>
           <div className={styles.betContainer__button}>
             <button 
