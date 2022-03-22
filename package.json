@@ -1,4 +1,5 @@
 {
+  "homepage": "https://marcin082.github.io/blackjack-game/",
   "name": "blackjack-game",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,7 @@
     "@types/react-dom": "^17.0.11",
     "axios": "^0.26.0",
     "classnames": "^2.3.1",
+    "gh-pages": "^3.2.3",
     "node-sass": "^7.0.1",
     "react": "^17.0.2",
     "react-css-modules": "^4.7.11",
@@ -30,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pahes -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [

@@ -6,7 +6,7 @@ BlackJack is a casino card game. The most widely played casino banking game in t
 
 ## Demo
 
- Here is a working live demo : DDDDD
+ Here is a working live demo : [DEMO](https://marcin082.github.io/blackjack-game/)
 
 
 ![](src/assets/screen1.png)
