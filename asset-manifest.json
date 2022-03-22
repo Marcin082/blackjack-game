@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/blackjack-game/static/css/main.538ebe67.css",
+    "main.js": "/blackjack-game/static/js/main.2f19952b.js",
+    "static/js/787.cacf667e.chunk.js": "/blackjack-game/static/js/787.cacf667e.chunk.js",
+    "static/media/table.png": "/blackjack-game/static/media/table.4d929675179f5fc49b0b.png",
+    "static/media/card3.png": "/blackjack-game/static/media/card3.0e489c1c6c1c0953bf1c.png",
+    "static/media/casino-chip25.png": "/blackjack-game/static/media/casino-chip25.5e4238ea63bf2fc8239a.png",
+    "static/media/casino-chip100.png": "/blackjack-game/static/media/casino-chip100.77049574ab7d3fe1c1be.png",
+    "static/media/casino-chip500.png": "/blackjack-game/static/media/casino-chip500.b2db0f78156f15758eec.png",
+    "static/media/casino-chip10.png": "/blackjack-game/static/media/casino-chip10.fc05bb02d5cd764af99d.png",
+    "static/media/casino-chip5.png": "/blackjack-game/static/media/casino-chip5.910c9a465c5eeeda625e.png",
+    "static/media/casino-chip50.png": "/blackjack-game/static/media/casino-chip50.1d95a50b7a57ecc2ced2.png",
+    "static/media/casino-chip1.png": "/blackjack-game/static/media/casino-chip1.5cd94d4520edb0a3bbcb.png",
+    "static/media/double.png": "/blackjack-game/static/media/double.4fb8e8a5e093ed386276.png",
+    "static/media/insurance.png": "/blackjack-game/static/media/insurance.1df41cde50b5f9b1d7c8.png",
+    "static/media/card.png": "/blackjack-game/static/media/card.33a92f0364bfd1e26f45.png",
+    "static/media/cardbg.jpg": "/blackjack-game/static/media/cardbg.6af8e62caa9a94171fec.jpg",
+    "index.html": "/blackjack-game/index.html",
+    "main.538ebe67.css.map": "/blackjack-game/static/css/main.538ebe67.css.map",
+    "main.2f19952b.js.map": "/blackjack-game/static/js/main.2f19952b.js.map",
+    "787.cacf667e.chunk.js.map": "/blackjack-game/static/js/787.cacf667e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.538ebe67.css",
+    "static/js/main.2f19952b.js"
+  ]
+}
