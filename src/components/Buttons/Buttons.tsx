@@ -1,27 +1,27 @@
-import React from "react";
-import styles from "./Buttons.module.scss";
-import { getPlayerCard } from "../../redux/actions/CardActions";
-import { doubleBet, setInsurance } from "../../redux/actions/GameActions";
-import { IoHandLeftOutline } from "react-icons/io5";
-import { BiDownArrow } from "react-icons/bi";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../redux/reducers";
+import React from 'react'
+import styles from './Buttons.module.scss'
+import { getPlayerCard } from '../../redux/actions/CardActions'
+import { doubleBet, setInsurance } from '../../redux/actions/GameActions'
+import { IoHandLeftOutline } from 'react-icons/io5'
+import { BiDownArrow } from 'react-icons/bi'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '../../redux/reducers'
 type Props = {
   deckId: string;
   standHandler: ()=>void;
   setIsInsurance:React.Dispatch<React.SetStateAction<boolean>>;
 };
 const Buttons: React.FC<Props> = (props: Props) => {
-  const cards = useSelector((state: RootState) => state.cards);
-  const game = useSelector((state: RootState) => state.game);
-  const { bet, cash } = game;
-  const {  dealer } = cards;
-  const dispatch = useDispatch();
+  const cards = useSelector((state: RootState) => state.cards)
+  const game = useSelector((state: RootState) => state.game)
+  const { bet, cash } = game
+  const { dealer } = cards
+  const dispatch = useDispatch()
 
-  let FirstDealerCard = "";
+  let FirstDealerCard = ''
   if (dealer.cards[0] !== undefined) {
     if (/[A-B]/.test(dealer.cards[0].value)) {
-      FirstDealerCard = dealer.cards[0].value;
+      FirstDealerCard = dealer.cards[0].value
     }
   }
   return (
@@ -42,21 +42,21 @@ const Buttons: React.FC<Props> = (props: Props) => {
             className={styles.buttonsContainer__double}
             onClick={() => {
               if (cash >= 2 * bet) {
-                dispatch(doubleBet());
-                dispatch(getPlayerCard(props.deckId));
+                dispatch(doubleBet())
+                dispatch(getPlayerCard(props.deckId))
               }
             }}
           >
             <img
-              style={{ width: "40px" }}
+              style={{ width: '40px' }}
               alt="doubleIcon"
-              src={require("../../assets/double.png")}
+              src={require('../../assets/double.png')}
             />
           </button>
           <span className={styles.buttonsContainer__buttonDesc}>Double</span>
         </div>
 
-        {FirstDealerCard === "ACE" && (
+        {FirstDealerCard === 'ACE' && (
           <div className={styles.buttonsContainer__buttonContainer}>
             <button
               className={styles.buttonsContainer__insurance}
@@ -66,9 +66,9 @@ const Buttons: React.FC<Props> = (props: Props) => {
               }}
             >
               <img
-                style={{ width: "40px" }}
+                style={{ width: '40px' }}
                 alt="doubleIcon"
-                src={require("../../assets/insurance.png")}
+                src={require('../../assets/insurance.png')}
               />
             </button>
             <span className={styles.buttonsContainer__buttonDesc}>
@@ -81,7 +81,7 @@ const Buttons: React.FC<Props> = (props: Props) => {
           <button
             className={styles.buttonsContainer__hit}
             onClick={() => {
-              dispatch(getPlayerCard(props.deckId));
+              dispatch(getPlayerCard(props.deckId))
             }}
           >
             <BiDownArrow />
@@ -90,7 +90,7 @@ const Buttons: React.FC<Props> = (props: Props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Buttons;
+export default Buttons

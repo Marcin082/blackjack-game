@@ -1,9 +1,10 @@
-import { SingleCard } from "../../types/types";
+/* eslint-disable no-unused-vars */
+import { SingleCard } from '../../types/types'
 
 export enum ActionCardsTypes {
-  GET_PLAYER_CARD = "GET_PLAYER_CARD",
-  GET_DEALER_CARD = "GET_DEALER_CARD",
-  CLEAR_CARDS = "CLEAR_CARDS",
+  GET_PLAYER_CARD = 'GET_PLAYER_CARD',
+  GET_DEALER_CARD = 'GET_DEALER_CARD',
+  CLEAR_CARDS = 'CLEAR_CARDS',
 }
 interface GettingCard {
   type: ActionCardsTypes.GET_PLAYER_CARD | ActionCardsTypes.GET_DEALER_CARD;

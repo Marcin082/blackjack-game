@@ -1,15 +1,16 @@
+/* eslint-disable no-unused-vars */
 export enum ActionGameTypes {
-  SET_START = "SET_START",
-  SET_ROUND = "SET_ROUND",
-  SET_BET = "SET_BET",
-  SET_CASH = "SET_CASH",
-  SET_RESULT = "SET_RESULT",
-  MAKE_SUMMARY = "MAKE_SUMMARY",
-  DELETE_BET = "DELETE_BET",
-  CLEAR_BET = "CLEAR_BET",
-  DOUBLE_BET = "DOUBLE_BET",
-  SET_INSURANCE = "SET_INSURANCE",
-  ADD_INSURANCE = "ADD_INSURANCE",
+  SET_START = 'SET_START',
+  SET_ROUND = 'SET_ROUND',
+  SET_BET = 'SET_BET',
+  SET_CASH = 'SET_CASH',
+  SET_RESULT = 'SET_RESULT',
+  MAKE_SUMMARY = 'MAKE_SUMMARY',
+  DELETE_BET = 'DELETE_BET',
+  CLEAR_BET = 'CLEAR_BET',
+  DOUBLE_BET = 'DOUBLE_BET',
+  SET_INSURANCE = 'SET_INSURANCE',
+  ADD_INSURANCE = 'ADD_INSURANCE',
 }
 
 interface SettingStart {
@@ -28,7 +29,7 @@ interface SettingCash {
 }
 interface SettingResult {
   type: ActionGameTypes.SET_RESULT;
-  payload: "player" | "dealer" | "draw";
+  payload: 'player' | 'dealer' | 'draw';
 }
 interface MakingSummary {
   type: ActionGameTypes.MAKE_SUMMARY;

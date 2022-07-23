@@ -1,18 +1,18 @@
-import { gameAction, ActionGameTypes } from "../constants/GameTypes";
+import { gameAction, ActionGameTypes } from '../constants/GameTypes'
 const intialState = {
-  game_start: false,
-  round_start: false,
+  gameStart: false,
+  roundStart: false,
   cash: 1500,
   bet: 0,
   result: undefined,
-  chips: [],
-};
+  chips: []
+}
 interface State {
-  game_start: boolean;
-  round_start: boolean;
+  gameStart: boolean;
+  roundStart: boolean;
   cash: number;
   bet: number;
-  result: "player" | "dealer" | "draw" | undefined;
+  result: 'player' | 'dealer' | 'draw' | undefined;
   chips: string[];
 }
 
@@ -22,47 +22,47 @@ export const gameReducer = (
 ): State => {
   switch (action.type) {
     case ActionGameTypes.SET_START:
-      return { ...state, game_start: true };
+      return { ...state, gameStart: true }
     case ActionGameTypes.SET_ROUND:
-      return { ...state, round_start: true };
+      return { ...state, roundStart: true }
     case ActionGameTypes.SET_BET:
-      const chipValue = String(action.payload);
       return {
         ...state,
         bet: state.bet + action.payload,
-        chips: [...state.chips, chipValue],
-      };
+        chips: [...state.chips, String(action.payload)]
+      }
     case ActionGameTypes.SET_CASH:
-      return { ...state, cash: state.cash + action.payload };
+      return { ...state, cash: state.cash + action.payload }
     case ActionGameTypes.SET_INSURANCE:
-      return { ...state, cash: state.cash - state.bet/2};
+      return { ...state, cash: state.cash - state.bet / 2 }
     case ActionGameTypes.ADD_INSURANCE:
-      return { ...state, cash: state.cash + state.bet};
+      return { ...state, cash: state.cash + state.bet }
     case ActionGameTypes.DOUBLE_BET:
-      return { ...state, cash: state.cash - state.bet, bet: state.bet * 2 };
+      return { ...state, cash: state.cash - state.bet, bet: state.bet * 2 }
     case ActionGameTypes.SET_RESULT:
-      return { ...state, result: action.payload };
+      return { ...state, result: action.payload }
     case ActionGameTypes.DELETE_BET:
-      state.chips.pop();
-      return { ...state, cash:state.cash-action.payload,bet: state.bet + action.payload, chips: state.chips };
+      state.chips.pop()
+      return { ...state, cash: state.cash - action.payload, bet: state.bet + action.payload, chips: state.chips }
     case ActionGameTypes.CLEAR_BET:
-      return { ...state,bet:0, cash: state.cash + state.bet, chips: [] };
+      return { ...state, bet: 0, cash: state.cash + state.bet, chips: [] }
     case ActionGameTypes.MAKE_SUMMARY:
-      let money = 0;
-      if (state.result === "player") {
-        money = 2 * state.bet;
-      } else if (state.result === "draw") {
-        money = state.bet;
+      // eslint-disable-next-line no-case-declarations
+      let money = 0
+      if (state.result === 'player') {
+        money = 2 * state.bet
+      } else if (state.result === 'draw') {
+        money = state.bet
       }
       return {
         ...state,
-        round_start: false,
+        roundStart: false,
         cash: state.cash + money,
         bet: 0,
         result: undefined,
-        chips: [],
-      };
+        chips: []
+      }
     default:
-      return state;
+      return state
   }
-};
+}

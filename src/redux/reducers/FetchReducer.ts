@@ -1,8 +1,8 @@
-import { ActionFetchTypes, fetchAction } from "../constants/FetchTypes"
+import { ActionFetchTypes, fetchAction } from '../constants/FetchTypes'
 
 const initialState = {
-    loading: false,
-    error: ''
+  loading: false,
+  error: ''
 }
 
 export const fetchReducer = (state = initialState, action:fetchAction) => {

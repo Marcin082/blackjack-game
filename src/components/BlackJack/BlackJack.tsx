@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./BlackJack.module.scss";
+import React from 'react'
+import styles from './BlackJack.module.scss'
 
 type Props = {
   blackJack: string;
@@ -10,14 +10,14 @@ const BlackJack = (props: Props) => {
       className={styles.blackJack}
       style={{
         transform:
-          props.blackJack === "player"
-            ? "translatey(-300px)"
-            : "translatey(-700px)",
+          props.blackJack === 'player'
+            ? 'translatey(-300px)'
+            : 'translatey(-700px)'
       }}
     >
       BLACKJACK!
     </div>
-  );
-};
+  )
+}
 
-export default BlackJack;
+export default BlackJack
